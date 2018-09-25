@@ -1,0 +1,61 @@
+
+{
+    "code": 20000,
+    "msg": "请求成功",
+    "data": [{
+        "id": 101,
+        "checked": false,
+        "img": "img/1.png",
+        "summary": "你可以仅仅通过 data 属性 API 就能使用所有的 Bootstrap 插件",
+        "message": "颜色分类： 4.7寸6/6s星空黑重力缓冲系统更防摔",
+        "oldprice": 28.00,
+        "newprice": 45.00,
+        "count": 1,
+        "money": 45.00
+    },
+    {
+        "id": 102,
+        "checked": false,
+        "img": "img/2.png",
+        "summary": "你可以仅仅通过 data 属性 API 就能使用所有的 Bootstrap 插件",
+        "message": "颜色分类： 4.7寸6/6s星空黑重力缓冲系统更防摔",
+        "oldprice": 96.13,
+        "newprice": 60.00,
+        "count": 1,
+        "money": 60.00
+    },
+    {
+        "id": 103,
+        "checked": false,
+        "img": "img/3.png",
+        "summary": "你可以仅仅通过 data 属性 API 就能使用所有的 Bootstrap 插件",
+        "message": "颜色分类： 4.7寸6/6s星空黑重力缓冲系统更防摔",
+        "oldprice": 58.00,
+        "newprice": 35.10,
+        "count": 1,
+        "money": 35.10
+    },
+    {
+        "id": 104,
+        "checked": false,
+        "img": "img/4.png",
+        "summary": "你可以仅仅通过 data 属性 API 就能使用所有的 Bootstrap 插件",
+        "message": "颜色分类： 4.7寸6/6s星空黑重力缓冲系统更防摔",
+        "oldprice": 158.00,
+        "newprice": 70.50,
+        "count": 1,
+        "money": 70.50
+    },
+    {
+        "id": 105,
+        "checked": false,
+        "img": "img/2.png",
+        "summary": "你可以仅仅通过 data 属性 API 就能使用所有的 Bootstrap 插件",
+        "message": "颜色分类： 4.7寸6/6s星空黑重力缓冲系统更防摔",
+        "oldprice": 138.00,
+        "newprice": 50.50,
+        "count": 1,
+        "money": 50.50
+    }
+    ]
+}

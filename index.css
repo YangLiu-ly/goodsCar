@@ -1,0 +1,138 @@
+/* 公共样式*/
+body,
+ul,
+h1,h2,h3,h4,h5{
+    padding: 0;
+    margin: 0;
+}
+.clealboth:after{
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+}
+.fleft{
+    float: left;
+}
+.fright{
+    float: right;
+}
+.gray-bg{
+    background-color: rgb(235, 235, 235);
+}
+/*标签样式*/
+.app{
+    width: 1306px;
+    margin: 0 auto;
+}
+.app li{
+    display: block;
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid rgb(156, 156, 156);
+    padding-top: 20px;
+}
+.commodity input{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 2px;
+    margin-left: 50px;
+    margin-top: 30px; 
+    margin-bottom: 80px;
+    cursor: pointer;  
+}
+.commodity input:checked{
+    background-color: #3179fd;
+}
+.commodity .goods-img{
+    width: 82px;
+    height: 82px;
+    float: left;
+    border: 1px solid #cfd0d1;
+    margin-left: 50px; 
+}
+.goods h4{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+.detail{
+    font-size: 14px;
+    margin-left: 30px;
+    width: 185px;
+}   
+.commodity .price{
+    width: 100px;
+    margin-left: 30px;
+}   
+.price .oldprice{
+    display: inline-block;
+    text-decoration: line-through;
+    width: 100px;
+
+}
+.price .newprice{
+    font-weight: 700;
+}
+.commodity>.count{
+    margin-left: 20px;
+    border: 1px solid #cfd0d1;
+    border-radius: 4px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+}
+.count span, .count a{
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    text-align: center;
+    height: 30px;
+}  
+.count a{
+    text-decoration: none;
+    color: #000;
+    width: 20px;
+    cursor: pointer;    
+}
+.count span{
+    width: 40px;
+    border-left: 1px solid #cfd0d1;
+    border-right: 1px solid #cfd0d1;  
+}
+.total-price{
+    color: #ff0000;
+    margin-left: 200px;
+    font-weight: 700;
+}
+.foot-bal{
+    width: 100%;
+    border-top: 1px solid #c3c3c3;
+    line-height: 60px;
+    margin-top: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.foot-bal span{
+    font-size: 18px;
+    font-weight: 700;
+    color: #f00;
+}
+.summary{
+    width: 180px;
+    background-color: #8f8f8f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 35px;
+}
+.pros-num{
+    margin-right: 35px;
+}  
