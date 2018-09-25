@@ -1,8 +1,9 @@
 var goodsList = document.querySelector('.app ul');
 var list = [];
 var goodsTotal = [];
-var icount = 1;
+// var icount = 1;
 var key = null;
+
 
 function init(){
     events();
@@ -32,26 +33,29 @@ function events(){
 
         //加减商品数量
         if(target.tagName === 'A' && target.className === 'reduce'){
+            //得到当前数量
             var danCountEl = target.nextElementSibling;
+            var icount = danCountEl.innerHTML-0;
             var danMoneyEl = target.parentElement.nextElementSibling.lastChild;
-            var danMoney = (danMoneyEl.innerHTML-0)/icount;
-
+            var danMoney = (danMoneyEl.innerHTML-0)/icount; //当前价格除以数量得到单价
+            console.log(danMoney)
             //判断数量是否小于一
             icount = icount === 1 ? 1 : icount-1;
             danCountEl.innerHTML = icount; 
-            danMoneyEl.innerHTML = icount*danMoney;
+            danMoneyEl.innerHTML = (icount*danMoney).toFixed(2);
             updateSummary();   
         }
 
         //增加商品呢数量
         if(target.tagName === 'A' && target.className === 'add'){
             var danCountEl = target.previousElementSibling;
+            var icount = danCountEl.innerHTML-0;
             console.log(danCountEl)
             var danMoneyEl = target.parentElement.nextElementSibling.lastChild;
-            var danMoney = (danMoneyEl.innerHTML-0)/icount;
+            var danMoney = ((danMoneyEl.innerHTML-0)/icount).toFixed(2);
 
             danCountEl.innerHTML = ++icount;    
-            danMoneyEl.innerHTML = icount*danMoney;
+            danMoneyEl.innerHTML = (icount*danMoney).toFixed(2);
             updateSummary();   
         }
     })
@@ -68,7 +72,7 @@ function updateSummary() {
     for(var i=0; i<acGoodsList.length; i++){
         allmoney += (acGoodsList[i].lastElementChild.lastChild.innerHTML-0);
     }
-    zongjiEl.innerHTML = allmoney;
+    zongjiEl.innerHTML = allmoney.toFixed(2);
     zongCount.innerHTML = acGoodsList.length;
 }
 
@@ -103,20 +107,19 @@ function renderlist(arr){
                 ${arr[i].message}
             </div>
             <div class="price fleft">
-                <span class="oldprice">￥${arr[i].oldprice}</span>
-                <span class="newprice">￥<span>${arr[i].newprice}</span></span>
+                <span class="oldprice">￥${arr[i].oldprice.toFixed(2)}</span>
+                <span class="newprice">￥<span>${arr[i].newprice.toFixed(2)}</span></span>
             </div>
             <div class="count fleft">
                 <a class="reduce">-</a>
                 <span class="goods-conut">${arr[i].count}</span>
                 <a class="add">+</a>
             </div>
-            <span class="total-price">￥<span>${arr[i].money}</span></span>
+            <span class="total-price">￥<span>${arr[i].money.toFixed(2)}</span></span>
         </li>`
     }
     goodsList.innerHTML = html;
 }
-
 
 /**
  * 请求数据
